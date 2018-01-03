@@ -1,0 +1,1000 @@
+ 1002  /home/sourabh/linux/kernel/irq/
+ 1003  ls /home/sourabh/linux/kernel/irq/
+ 1004  cd /home/sourabh/linux/kernel/irq/
+ 1005  gedit manage.
+ 1006  gedit manage.c
+ 1007  clear
+ 1008  Docementation
+ 1009  locate Documentation
+ 1010  man locate
+ 1011  locate -A Documentation
+ 1012  cd /src
+ 1013  clear
+ 1014  cd /src
+ 1015  cd
+ 1016  cd /src
+ 1017  cd usr/src
+ 1018  cd /usr/src
+ 1019  ls
+ 1020  cd /sys/bus
+ 1021  ls
+ 1022  ls | grep xbus
+ 1023  cd xbus/
+ 1024  ls
+ 1025  make xbus.ko
+ 1026  make
+ 1027  sudo insmod xbus.ko 
+ 1028  lsmod
+ 1029  sh shutdown.sh 
+ 1030  exit
+ 1031  node -v
+ 1032  npm -v
+ 1033  sudo apt-get install nodejs
+ 1034  node -v
+ 1035  man nodejs
+ 1036  nodejs -v
+ 1037  sudo apt-get install npm
+ 1038  npm -v
+ 1039  nodejs -v
+ 1040  node hello.js 
+ 1041  nodejs hello.js 
+ 1042  sudo apt install nodejs-legacy
+ 1043  node hello.js 
+ 1044  man curl
+ 1045  nodejs
+ 1046  nodejs -v
+ 1047  cd NODE/
+ 1048  node Server.js 
+ 1049  node index.js 
+ 1050  ifconfig
+ 1051  cd NODE/
+ 1052  ls
+ 1053  node index.js 
+ 1054  clear
+ 1055  node index.js 
+ 1056  exit
+ 1057  node index.js 
+ 1058  cd NODE/
+ 1059  node index.js 
+ 1060  exit
+ 1061  cd NODE/
+ 1062  node index.js 
+ 1063  node Index.js 
+ 1064  clear
+ 1065  node Index.js 
+ 1066  clear
+ 1067  node Index.js 
+ 1068  expiry 
+ 1069  expiry -c
+ 1070  expiry --check
+ 1071  man expiry 
+ 1072  expiry -h
+ 1073  expiry -f
+ 1074  exit
+ 1075  cd NODE/
+ 1076  node Server.js 
+ 1077  node Index.js 
+ 1078  clear
+ 1079  node Index.js 
+ 1080  clear
+ 1081  node Index.js 
+ 1082  logout
+ 1083  exit
+ 1084  ls
+ 1085  shutdown -f
+ 1086  make menuconfig
+ 1087  make config
+ 1088  man make
+ 1089  exit
+ 1090  cd /lib/modules/`uname -r`/
+ 1091  ls
+ 1092  cd build
+ 1093  ls
+ 1094  nano Makefile 
+ 1095  nano ~/.bashrc
+ 1096  cd
+ 1097  cd /
+ 1098  ls
+ 1099  locate bashrc
+ 1100  cd root
+ 1101  ls
+ 1102  cd
+ 1103  cd /root
+ 1104  ls
+ 1105  ls -a
+ 1106  exit
+ 1107  sudo apt-get-install nfs-commin
+ 1108  sudo apt-get-install nfs-common
+ 1109  sudo apt-get install nfs-common
+ 1110  sudo /etc/hosts
+ 1111  mkdir -p /mnt/nfs/home
+ 1112  sudo mkdir -p /mnt/nfs/home
+ 1113  su
+ 1114  cd 
+ 1115  pwd
+ 1116  cd ..
+ 1117  pwd
+ 1118  cd mnt
+ 1119  pwd
+ 1120  mkdir nfs
+ 1121  cd nfs
+ 1122  mkdir home
+ 1123  ls
+ 1124  cd /
+ 1125  mount 192.168.122.1/24:/project /mnt/nfs/home
+ 1126  sudo mount 192.168.122.1/24:/project /mnt/nfs/home
+ 1127  sudo mount 192.168.122.1/\:/project /mnt/nfs/home
+ 1128  sudo mount 192.168.122.1:/project /mnt/nfs/home
+ 1129  exit
+ 1130  sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 7F0CEB10
+ 1131  echo "deb http://repo.mongodb.org/apt/ubuntu trusty/mongodb-org/3.0 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-3.0.list
+ 1132  sudo apt-get update
+ 1133  sudo apt-get install -y mongodb-org
+ 1134  cd /var/lib/mongodb/
+ 1135  ls
+ 1136  cd
+ 1137  cd ..
+ 1138  cd
+ 1139  sudo service mongod start
+ 1140  cd /var/lib/mongodb/
+ 1141  sudo service mongod start
+ 1142  ls -a
+ 1143  ls -l
+ 1144  sudo apt-get install -y mongodb-org=3.0.15 mongodb-org-server=3.0.15 mongodb-org-shell=3.0.15 mongodb-org-mongos=3.0.15 mongodb-org-tools=3.0.15
+ 1145  echo "mongodb-org hold" | sudo dpkg --set-selections
+ 1146  echo "mongodb-org-server hold" | sudo dpkg --set-selections
+ 1147  echo "mongodb-org-shell hold" | sudo dpkg --set-selections
+ 1148  echo "mongodb-org-mongos hold" | sudo dpkg --set-selections
+ 1149  echo "mongodb-org-tools hold" | sudo dpkg --set-selections
+ 1150  cd
+ 1151  sudo service mongod start
+ 1152  clear
+ 1153  cd /root
+ 1154  ~/.bashrc
+ 1155  sudo ~/.bashrc
+ 1156  sudo gedit bashrc
+ 1157  cleAR
+ 1158  clear
+ 1159  java
+ 1160  java -version
+ 1161  javac -version
+ 1162  clear
+ 1163  cd Documents/
+ 1164  cd UNICLOUD/
+ 1165  ls
+ 1166  cd mongodb-linux-x86_64-ubuntu1604-3.4.9/
+ 1167  mkdir -p /data/db
+ 1168  sudo mkdir -p /data/db
+ 1169  ls
+ 1170  cd bin
+ 1171  ls
+ 1172  mongod
+ 1173  cd
+ 1174  chmod 777 /data/db
+ 1175  sudo chmod 777 /data/db
+ 1176  cd z
+ 1177  dg/dtg
+ 1178  cd Documents/UNICLOUD/mongodb-linux-x86_64-ubuntu1604-3.4.9/bin/
+ 1179  mongod
+ 1180  clear
+ 1181  mongod
+ 1182  clear
+ 1183  mongod --port 27017
+ 1184  npm install -g express-generator
+ 1185  sudo npm install -g express-generator
+ 1186  clear
+ 1187  cd Desktop/
+ 1188  mkdir contactList
+ 1189  cd contactList/
+ 1190  npm init
+ 1191  ls
+ 1192  npm install express --save
+ 1193  npm install mongoose bodypart cors --save
+ 1194  npm install mongoose body-parser cors --save
+ 1195  node Index.js 
+ 1196  npm install nodemon
+ 1197  node Index.js 
+ 1198  npm install nodemon
+ 1199  node Index.js 
+ 1200  mongo
+ 1201  exit
+ 1202  cd Documents/UNICLOUD/mongodb-linux-x86_64-ubuntu1604-3.4.9/bin/
+ 1203  ls
+ 1204  mongod
+ 1205  cd
+ 1206  mongod
+ 1207  mondod
+ 1208  mongod
+ 1209  clear
+ 1210  ~/.bashrc
+ 1211  sudo ~/.bashrc
+ 1212  sudo gedit  ~/.bashrc
+ 1213  clear
+ 1214  mongod
+ 1215  mongo
+ 1216  clear
+ 1217  mongo
+ 1218  exit
+ 1219  npm install @angular/cli
+ 1220  clear
+ 1221  ng new client
+ 1222  sudo apt-get install ng
+ 1223  sudo apt-get install ng-common 
+ 1224  ng new client
+ 1225  cd
+ 1226  ~/.bashrc
+ 1227  sudo edit ~/.bashrc
+ 1228  /usr/bin/ng new client
+ 1229  /usr/bin/ng  client
+ 1230  sudo apt- get install ng-cjk
+ 1231  sudo apt -get install ng-cjk
+ 1232  ng
+ 1233  cd Desktop/contactList/
+ 1234  ls
+ 1235  npm install -g ng-cli
+ 1236  sudo chmod 777 /usr/local/lib/node_modules/
+ 1237  npm install -g ng-cli
+ 1238  sudo npm install -g ng-cli
+ 1239  ng new client
+ 1240  ls
+ 1241  cd client
+ 1242  cd node_modules/
+ 1243  ls
+ 1244  grep client
+ 1245  ls | grep client
+ 1246  cd /usr/local/lib/
+ 1247  ls
+ 1248  cd node_modules/
+ 1249  ls
+ 1250  cd ng-cli/
+ 1251  ls
+ 1252  cd lib
+ 1253  ls
+ 1254  ng new client
+ 1255  ng build
+ 1256  cd 
+ 1257  cd Desktop/contactList/
+ 1258  ls
+ 1259  npm install @angular/cli
+ 1260  ng
+ 1261  ng -v
+ 1262  ng
+ 1263  ng -V
+ 1264  ng -h
+ 1265  man ng
+ 1266  npm -v
+ 1267  node -v
+ 1268  nodejs -v
+ 1269  npm install -g angular-cli
+ 1270  npm install -g @angular/cli
+ 1271  sudo npm install -g @angular/cli
+ 1272  cd Desktop/contactList/
+ 1273  ls
+ 1274  node Index.js 
+ 1275  clear
+ 1276  node Index.js 
+ 1277  sudo npm cache clean -f
+ 1278  sudo npm install -g n
+ 1279  sudo n stable
+ 1280  npm -v
+ 1281  nodejs -v
+ 1282  sudo ln -sf /usr/local/n/versions/node/<VERSION>/bin/node /usr/bin/nodejs
+ 1283  sudo apt-get install nodejs
+ 1284  sudo apt-get install --only-upgrade nodejs
+ 1285  node -v
+ 1286  nodejs -v
+ 1287  npm -v
+ 1288  sudo apt remove nodejs
+ 1289  clear
+ 1290  node
+ 1291  nodejs
+ 1292  nodejs -v
+ 1293  clear
+ 1294  curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
+ 1295  sudo apt-get install nodejs
+ 1296  node -v\
+ 1297  node -v
+ 1298  nodejs -v
+ 1299  npm in
+ 1300  npm init
+ 1301  sudo apt autoremove ng-cli
+ 1302  sudo apt autoremove ng
+ 1303  clear
+ 1304  npm install -g @angular/cli
+ 1305  ng new client
+ 1306  ls
+ 1307  sudo npm install -g @angular/cli
+ 1308  ng new client
+ 1309  ls
+ 1310  cd client
+ 1311  sudo apt-get install /home/sourabh/Desktop/contactList/client/angular-cli-master
+ 1312  sudo apt-get install /home/sourabh/Desktop/contactList/client/angular-cli-master/
+ 1313  cd client/angular-cli-master/bin/
+ 1314  ng
+ 1315  cd Desktop/contactList/
+ 1316  ng new sourabh
+ 1317  cd sourabh/
+ 1318  ng serve
+ 1319  ng g component contacts
+ 1320  node -version
+ 1321  nodejs -version
+ 1322  nodejs -v
+ 1323  node -v
+ 1324  sudo apt - get upadte node
+ 1325  sudo apt -get update node
+ 1326  sudo apt update node
+ 1327  cd
+ 1328  mkdir test
+ 1329  cd test/
+ 1330  ng new sourabh
+ 1331  ng serve
+ 1332  cd sourabh/
+ 1333  ng serve
+ 1334  cd sourabh/
+ 1335  lspci
+ 1336  ng serve
+ 1337  clear
+ 1338  ng serve
+ 1339  cd sourabh/
+ 1340  ng serve
+ 1341  cd sourabh/
+ 1342  ng g service /services.data
+ 1343  ng g service /services/data
+ 1344  npm install --save dropbox
+ 1345  npm i -g npm
+ 1346  sudo npm i -g npm
+ 1347  npm -version
+ 1348  node Index.js 
+ 1349  npm install --save dropbox
+ 1350  commit package-lock.json 
+ 1351  cd
+ 1352  mkdir dropbox
+ 1353  cd dropbox/
+ 1354  npm init
+ 1355  cd
+ 1356  npm install --save dropbox
+ 1357  curl https://api.dropbox.com/1/account/info -H "Authorization:Bearer " PdY3ja4FyJAAAAAAAAAACR9Fwteg_iJEhawmOMP5MyHXcT-Lkd40dQkm9Q_O6l_y
+ 1358  curl https://api.dropbox.com/1/account/info -H "Authorization:Bearer PdY3ja4FyJAAAAAAAAAACR9Fwteg_iJEhawmOMP5MyHXcT-Lkd40dQkm9Q_O6l_y "
+ 1359  curl https://api.dropbox.com/1/account/info -H "Authorization:Bearer PdY3ja4FyJAAAAAAAAAACR9Fwteg_iJEhawmOMP5MyHXcT-Lkd40dQkm9Q_O6l_y"
+ 1360  curl https://api.dropbox.com/1/account/info -H "Authori
+ 1361  curl https://api.dropbox.com/1/account/info -H "Authorization:Bearer PdY3ja4FyJAAAAAAAAAACk8vRabFsjK397PfsPd8qDSStiA5DDMnYBtFRGtSN-kL"
+ 1362  '/home/sourabh/package-lock.json' 
+ 1363  sudo '/home/sourabh/package-lock.json' 
+ 1364  sh shutdown.sh 
+ 1365  npm install express --save
+ 1366  npm install dropbox --save 
+ 1367  npm install --save dropbox
+ 1368  npm install cors body-parser --save
+ 1369  clear
+ 1370  node index.js
+ 1371  clear
+ 1372  node index.js
+ 1373  clear
+ 1374  node index.js
+ 1375  npm init
+ 1376  npm install --save dropbox
+ 1377  npm install cors body-parser --save 
+ 1378  mkdir angular
+ 1379  cd angular/
+ 1380  ng serve
+ 1381  clear
+ 1382  cd ..
+ 1383  rmdir angular/
+ 1384  cd ../test/
+ 1385  ls
+ 1386  cd sourabh/
+ 1387  ls
+ 1388  ls ./src
+ 1389  ls ././app
+ 1390  ls ././app/
+ 1391  ls ./app/
+ 1392  ./app
+ 1393  ./src/app
+ 1394  ./src/app/
+ 1395  ls ./src/app/
+ 1396  cd ..
+ 1397  cp sourabh/ ../TestDropbox/angular/
+ 1398  cd ../TestDropbox/
+ 1399  ls
+ 1400  mkdir angular
+ 1401  cp ../test/sourabh/ ./angular/
+ 1402  cd angular/
+ 1403  ng serve
+ 1404  cd ..
+ 1405  cd ../../..
+ 1406  cd
+ 1407  cd TestDropbox/
+ 1408  ls
+ 1409  ng new angular
+ 1410  cd angular/
+ 1411  ng serve
+ 1412  cd
+ 1413  cd TestDropbox/
+ 1414  npm install -g angular-cli
+ 1415  npm install -g @angular/cli
+ 1416  sudo npm install -g @angular/cli
+ 1417  cd js
+ 1418  node index.js 
+ 1419  clear
+ 1420  node index.js 
+ 1421  cd
+ 1422  cd Te
+ 1423  cd TestDropbox/
+ 1424  clear
+ 1425  cd js
+ 1426  node index.js 
+ 1427  cd ..
+ 1428  npm install request --save
+ 1429  cd js
+ 1430  clear
+ 1431  node index.js 
+ 1432  clear
+ 1433  node index.js 
+ 1434  clear
+ 1435  node index.js 
+ 1436  cd ..
+ 1437  npm install express --save
+ 1438  cd js 
+ 1439  node index.js
+ 1440  node app.js
+ 1441  clear
+ 1442  node app.js
+ 1443  npm install -g nodemon
+ 1444  sudo npm install -g nodemon
+ 1445  cd /Documents/PROJECT21oct/meanauthapp
+ 1446  cd /Documents/PROJECT21oct/meanauthapp/
+ 1447  cd /home/sourabh/Documents/PROJECT21oct/meanauthapp/
+ 1448  node app.js 
+ 1449  ng serve
+ 1450  npm install -g @angular/cli
+ 1451  sudo npm install -g @angular/cli
+ 1452  ng serve
+ 1453  cd client/
+ 1454  ng serve
+ 1455  cd client/
+ 1456  ng service DataService
+ 1457  ng help
+ 1458  ng new service DataService
+ 1459  ng new service
+ 1460  ng generate service DataService
+ 1461  ng generate service /services/DataService
+ 1462  clear
+ 1463  ng serve
+ 1464  node app.js
+ 1465  mongod
+ 1466  node app.js 
+ 1467  clear
+ 1468  node app.js 
+ 1469  sudo npm install --save dropbox
+ 1470  node app.js 
+ 1471  clear
+ 1472  node app.js 
+ 1473  cear
+ 1474  clear
+ 1475  node app.js 
+ 1476  cd client/
+ 1477  ng serve
+ 1478  cd Desktop/EXTRAS/contactList/
+ 1479  ls
+ 1480  node Index.js 
+ 1481  exit
+ 1482  cdsou
+ 1483  cd sourabh/
+ 1484  ng serve
+ 1485  clear
+ 1486  mongod
+ 1487  exit
+ 1488  cd sourabh/
+ 1489  ng serve
+ 1490  node Index.js 
+ 1491  clear
+ 1492  node Index.js 
+ 1493  clear
+ 1494  node Index.js 
+ 1495  node app.js 
+ 1496  mongod
+ 1497  cd client/
+ 1498  ng serve
+ 1499  cordova plugin add cordova-plugin-inappbrowser
+ 1500  ng serve
+ 1501  node Index.js 
+ 1502  cd sourabh/
+ 1503  ng serve
+ 1504  gedit /etc/hosts
+ 1505  npm install dbox
+ 1506  sudo npm install dbox
+ 1507  sudo npm install fs
+ 1508  sudo npm install path
+ 1509  sudo npm install uuid
+ 1510  node Index.js 
+ 1511  sudo npm install --save http https
+ 1512  cd sourabh/
+ 1513  ng serve
+ 1514  node Index.js 
+ 1515  cd sourabh/
+ 1516  ng serve
+ 1517  cd sourabh/
+ 1518  cd client/
+ 1519  ng serve
+ 1520  mongod
+ 1521  node app.js 
+ 1522  cd client/
+ 1523  ng g component auth
+ 1524  ng g component ./components extra
+ 1525  ng g component ./components/extra
+ 1526  cd client/
+ 1527  ng serve
+ 1528  node app.js 
+ 1529  mongod
+ 1530  cd client/
+ 1531  ng serve
+ 1532  node app.js
+ 1533  cd client/
+ 1534  ng serve
+ 1535  mongod
+ 1536  sh shutdown.sh 
+ 1537  cd
+ 1538  mysql -u root -p
+ 1539  node app.js 
+ 1540  node app.js
+ 1541  node app.js
+ 1542  sudo npm install dbox
+ 1543  sudo npm install path fs --save
+ 1544  node app.js 
+ 1545  mongod
+ 1546  cd client
+ 1547  ng serve
+ 1548  node app.js 
+ 1549  sh shsu
+ 1550  sh shutdown.sh 
+ 1551  mongod
+ 1552  cd client
+ 1553  ng serve
+ 1554  node app.js 
+ 1555  cd client/
+ 1556  ng sudo npm install -g @angular/cli
+ 1557  sudo npm install -g @angular/http
+ 1558  sh shutdown.sh 
+ 1559  exit
+ 1560  cd client/
+ 1561  ng serve
+ 1562  mongod
+ 1563  node app.js 
+ 1564  clear
+ 1565  node app.js 
+ 1566  clear
+ 1567  node app.js 
+ 1568  sudo npm install http --save
+ 1569  cd client/
+ 1570  ng serve
+ 1571  node app.js
+ 1572  mongod
+ 1573  mongo
+ 1574  node app.js
+ 1575  node app.js
+ 1576  sudo npm install --save dropbox
+ 1577  sudo npm install mongodb --save
+ 1578  node app.js
+ 1579  sh shutdown.sh 
+ 1580  node app.js
+ 1581  clear
+ 1582  node app.js
+ 1583  sudo npm install Router --save
+ 1584  node app.js
+ 1585  sh shutdown.sh 
+ 1586  node app.js
+ 1587  mongo
+ 1588  exit
+ 1589  sudo$ npm install urlencode
+ 1590  sudo npm install urlencode
+ 1591  sudo npm install form-urlencoded
+ 1592  node app.js
+ 1593  mongo
+ 1594  cd /Desktop/EXTRAS/meanauthapp
+ 1595  cd /Desktop/EXTRAS/meanauthapp/
+ 1596  cd Desktop/EXTRAS/
+ 1597  ls 
+ 1598  cd meanauthapp/
+ 1599  clear
+ 1600  node app.js
+ 1601  mongod
+ 1602  cd client/
+ 1603  ng serve
+ 1604  clear
+ 1605  node app.js
+ 1606  clear
+ 1607  node app.js
+ 1608  sudo npm install url --save
+ 1609  node app.js
+ 1610  sudo npm install http --save
+ 1611  chmod 777 http
+ 1612  sudo chmod 777 http
+ 1613  sudo chmod 777 agent-base/
+ 1614  node app.js
+ 1615  npm install
+ 1616  node app.js
+ 1617  sudo npm install form-urlencoded
+ 1618  sudo npm install form-urlencoded --save
+ 1619  sudo npm install requestify
+ 1620  cd client
+ 1621  ng serve
+ 1622  cd client
+ 1623  sudo npm install -g @angular/cli
+ 1624  sudo npm install -g @ng-bootstrap
+ 1625  sudo npm install -g @ng-bootstrap/ng-bootstrap
+ 1626  sudo npm install ngx-bootstrap --save
+ 1627  mongod
+ 1628  ng serve
+ 1629  sudo npm install form-urlencoded --save
+ 1630  sudo npm install requestify
+ 1631  node app.js
+ 1632  clear
+ 1633  node app.js
+ 1634  cd client
+ 1635  ng serve
+ 1636  sudo npm install -g @angular/cli
+ 1637  ng serve
+ 1638  sudo npm install bootstrap@3 jquery --save
+ 1639  npm install --save @ng-bootstrap/ng-bootstrap
+ 1640  npm install bootstrap@4.0.0-alpha.6 --save
+ 1641  sudo npm install bootstrap@4.0.0-alpha.6 --save
+ 1642  ng serve
+ 1643  cd client
+ 1644  ng serve
+ 1645  sudo npm install bootstrap@3  --save
+ 1646  ng serve
+ 1647  mongod
+ 1648  node app.js
+ 1649  sh shutdown.sh 
+ 1650  cd client
+ 1651  ng serve
+ 1652  mongod
+ 1653  sh shutdown.sh 
+ 1654  cd client/
+ 1655  ng generate component /components/modal
+ 1656  cd client/
+ 1657  sudo npm install angular-tabs-component
+ 1658  node app.js 
+ 1659  cd client
+ 1660  mongod
+ 1661  ng serve
+ 1662  sh shutdown.sh 
+ 1663  ng generate component ./components/sidebar
+ 1664  ng generate component /components/sidebar
+ 1665  cd client/
+ 1666  ng generate component /components/sidebar
+ 1667  ng serve
+ 1668  ng generate component /components/sidebar
+ 1669  ng serve
+ 1670  mongod
+ 1671  node app.js 
+ 1672  sudo npm install form-urlencoded --save
+ 1673  sudo npm install form-urlencoded
+ 1674  node app.js 
+ 1675  cd client
+ 1676  ng generate component /components/addcloud
+ 1677  cd client/
+ 1678  ng serve
+ 1679  mongo
+ 1680  mongod
+ 1681  node app.js
+ 1682  node app.js 
+ 1683  cd client
+ 1684  sh shutdown.sh 
+ 1685  node app.js 
+ 1686  mongo
+ 1687  mongod
+ 1688  cd client/
+ 1689  ng serve
+ 1690  node app.js
+ 1691  mongod
+ 1692  cd client/
+ 1693  ng serve
+ 1694  node app.js
+ 1695  clear
+ 1696  node app.js
+ 1697  clear
+ 1698  node app.js
+ 1699  cd client/
+ 1700  ng serve
+ 1701  mongo
+ 1702  mongod
+ 1703  cd /var/logs
+ 1704  cd /var
+ 1705  ls
+ 1706  cd /var/lib/
+ 1707  ls
+ 1708  cd /lib/modules/
+ 1709  ls
+ 1710  cd /var/lib/
+ 1711  cd ..
+ 1712  ls
+ 1713  cd sys
+ 1714  tail -f /var/sys/log
+ 1715  cd 
+ 1716  tail -f /var/sys/log
+ 1717  cd /var/log/
+ 1718  ls
+ 1719  cd /var/log/syslog
+ 1720  tail -f  /var/log/syslog
+ 1721  node app.js
+ 1722  cd client/
+ 1723  ng serve
+ 1724  node app.js
+ 1725  mongof
+ 1726  mongod
+ 1727  sh shutdown.sh 
+ 1728  git --version
+ 1729  git status
+ 1730  git reset --hard c0464ae11a1d6c825f593e794c72d7fc05c2e028
+ 1731  git log
+ 1732  git checkout master
+ 1733  git fetch origin master:master
+ 1734  git merge patel
+ 1735  sudo git merge patel
+ 1736  sudo git merge master
+ 1737  git push --se
+ 1738  clear
+ 1739  cd client
+ 1740  ng serve
+ 1741  cd client
+ 1742  ng serve
+ 1743  git diff
+ 1744  git status
+ 1745  git status
+ 1746  git diff
+ 1747  git pull
+ 1748  git pull patel
+ 1749  git pull remote patel
+ 1750  git pull https://github.com/varunjaiswal1891/PE_repo1.git patel
+ 1751  git merge master
+ 1752  git checkout master
+ 1753  git merge patel
+ 1754  sudo git merge patel
+ 1755  git merge --abort
+ 1756  git reset --merge
+ 1757  git pull origin master
+ 1758  git pull origin patel
+ 1759  sudo npm install googleapis --save
+ 1760  node app.js
+ 1761  mongod
+ 1762  cd client/
+ 1763  ng serve
+ 1764  node app.js
+ 1765  clear
+ 1766  node app.js
+ 1767  clear
+ 1768  node app.js
+ 1769  sudo npm install string-template
+ 1770  clear
+ 1771  node app.js
+ 1772  cd client/
+ 1773  ng serve
+ 1774  mongod
+ 1775  clear
+ 1776  node app.js
+ 1777  mongo
+ 1778  git init
+ 1779  git add .
+ 1780  git commit -m "patel 02 nov"
+ 1781  git remote add origin https://github.com/SourabhPatel/UNICLOUD.git
+ 1782  git remote -v
+ 1783  rm -rf .git
+ 1784  git remote -v
+ 1785  git remote add origin https://github.com/SourabhPatel/UNICLOUD.git
+ 1786  git init
+ 1787  git add .
+ 1788  git commit -m "patel 01 commit 02 nov"
+ 1789  git remote add origin https://github.com/SourabhPatel/UNICLOUD.git
+ 1790  git remote -v
+ 1791  git push origin master
+ 1792  git push origin master --force
+ 1793  clear
+ 1794  cd client/
+ 1795  ng serve
+ 1796  node app.js 
+ 1797  mongod
+ 1798  cd client/
+ 1799  ng serve
+ 1800  sh shutdown.sh 
+ 1801  node app.js
+ 1802  ls -lah
+ 1803  ls -a
+ 1804  ls -a | grep git
+ 1805  mongod
+ 1806  node app.js 
+ 1807  cd client
+ 1808  ng serve
+ 1809  mongod
+ 1810  node app.js
+ 1811  cd client/
+ 1812  ng serve
+ 1813  cd client
+ 1814  ng serve
+ 1815  node app.js
+ 1816  mongod
+ 1817  sh shutdown.sh 
+ 1818  node app.js 
+ 1819  cd client/
+ 1820  ng serve
+ 1821  node app.js
+ 1822  mongod
+ 1823  cd client/
+ 1824  ng serve
+ 1825  node app.js 
+ 1826  mongo
+ 1827  rm -rf .git
+ 1828  git --version
+ 1829  sudo apt-get remove git
+ 1830  git --version
+ 1831  cd client
+ 1832  ng generate component components/UploadFile
+ 1833  npm install ng2-file-upload --save
+ 1834  sudo npm install ng2-file-upload --save
+ 1835  cd ..
+ 1836  sudo npm install --save multer
+ 1837  sudo npm install multer
+ 1838  sudo chmod 777
+ 1839  sudo chmod 777 2017-11-03T19_33_40_315Z-debug.log 
+ 1840  node app.js 
+ 1841  npm install streamsearch
+ 1842  sudo npm install streamsearch --save
+ 1843  node app.js 
+ 1844  sudo npm install busboy
+ 1845  sudo npm install dicer
+ 1846  sudo npm install --save dicer
+ 1847  npm install npm@latest -g
+ 1848  sudo npm install npm@latest -g
+ 1849  sudo npm install dicer
+ 1850  mongod
+ 1851  cd client/
+ 1852  ng serve
+ 1853  sudo npm install multer
+ 1854  node app.js 
+ 1855  cd client/
+ 1856  ng serve
+ 1857  mongod
+ 1858  sh shutdown.sh 
+ 1859  node app.js 
+ 1860  cd client/
+ 1861  ng serve
+ 1862  node app.js 
+ 1863  mongod
+ 1864  cd client/
+ 1865  ng serve
+ 1866  sh shutdown.sh 
+ 1867  mongo
+ 1868  cd client
+ 1869  ng generate service ./services/dropboxService
+ 1870  ng generate service ./services/dropbox
+ 1871  mongo
+ 1872  sudo npm install sleep
+ 1873  cd ..
+ 1874  sudo chmod 777 ./node_modules/
+ 1875  sudo npm install sleep
+ 1876  sudo npm install sleep
+ 1877  cd client
+ 1878  ng generate component ./components/fanthom
+ 1879  ng serve
+ 1880  mongod
+ 1881  node app.js 
+ 1882  clear
+ 1883  node app.js 
+ 1884  clear
+ 1885  node app.js 
+ 1886  clear
+ 1887  node app.js 
+ 1888  clear
+ 1889  node app.js 
+ 1890  clear
+ 1891  node app.js 
+ 1892  clear
+ 1893  node app.js 
+ 1894  clear
+ 1895  node app.js 
+ 1896  sudo npm install sleep
+ 1897  mongo
+ 1898  cd client/
+ 1899  sudo npm i angular2-contextmenu
+ 1900  sudo npm install ngx-contextmenu @angular/cdk@2.0.0-beta.12
+ 1901  node app.js
+ 1902  mongod
+ 1903  cd client/
+ 1904  clear
+ 1905  ng serve
+ 1906  ls -l
+ 1907  ls -a
+ 1908  node app.js
+ 1909  cd client
+ 1910  ng serve
+ 1911  mongo
+ 1912  cd clientt
+ 1913  cd client
+ 1914  ng generate component ./components/upload
+ 1915  npm install --save dropbox
+ 1916  mongo
+ 1917  mongod
+ 1918  node app.js 
+ 1919  cd client
+ 1920  ng serve
+ 1921  node app.js
+ 1922  mongod
+ 1923  mongo
+ 1924  mongod
+ 1925  cd client
+ 1926  ng serve
+ 1927  node app.js 
+ 1928  mongo
+ 1929  mongod
+ 1930  cd client
+ 1931  ng serve
+ 1932  sh shutdown.sh 
+ 1933  node app.js
+ 1934  mongo
+ 1935  mongod
+ 1936  cd client
+ 1937  ng serve
+ 1938  cd client
+ 1939  ng serve
+ 1940  mongod
+ 1941  node app.js 
+ 1942  javac Demo.java 
+ 1943  java Demo 
+ 1944  javac Demo.java 
+ 1945  java Demo 
+ 1946  clear
+ 1947  java Demo 
+ 1948  javac Demo.java 
+ 1949  java Demo 
+ 1950  javac Demo.java 
+ 1951  java Demo 
+ 1952  javac Demo.java 
+ 1953  java Demo 
+ 1954  javac Demo.java 
+ 1955  java Demo 
+ 1956  javac Demo.java 
+ 1957  java Demo 
+ 1958  javac Demo.java 
+ 1959  java Demo 
+ 1960  javac Demo.java 
+ 1961  java Demo 
+ 1962  javac Demo.java 
+ 1963  java Demo 
+ 1964  bdskjvb.dvbsd@ljfh
+ 1965  java Demo 
+ 1966  bdskjvb.dvbsd@ljfh
+ 1967  javac Demo.java 
+ 1968  java Demo 
+ 1969  javac Demo.java 
+ 1970  java Demo 
+ 1971  javac Demo.java 
+ 1972  java Demo 
+ 1973  javac Demo.java 
+ 1974  java Demo 
+ 1975  javac Demo.java 
+ 1976  java Demo 
+ 1977  javac Demo.java 
+ 1978  java Demo 
+ 1979  javac Demo.java 
+ 1980  java Demo 
+ 1981  javac Demo.java 
+ 1982  java Demo 
+ 1983  javac Demo.java 
+ 1984  java Demo 
+ 1985  javac Demo.java 
+ 1986  java Demo 
+ 1987  javac Demo.java 
+ 1988  java Demo 
+ 1989  javac Demo.java 
+ 1990  java Demo 
+ 1991  cd bin/
+ 1992  sh shutdown.sh 
+ 1993  mysql -u root -p
+ 1994  sh startup.sh 
+ 1995  sh catalina.sh 
+ 1996  sh startup.sh 
+ 1997  sudo sh startup.sh 
+ 1998  sh shutdown.sh 
+ 1999  npm install multer --save
+ 2000  sudo npm install multer --save
+ 2001  history  > file.txt

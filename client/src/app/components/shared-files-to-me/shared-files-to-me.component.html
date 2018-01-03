@@ -1,0 +1,41 @@
+<div class="row">
+    <div class="col-md-3"></div>
+    <div class="col-md-8">
+        <div class="panel panel-default" style="margin-top:-5%">
+            <div class="panel-heading">
+                <p style="font-weight: bold">Files shared to me</p>
+            </div>
+
+            <div class="panel-body">
+                <table class="table  table-fixedheader table-hover ">
+                    <thead>
+                        <tr>
+                            <th class="col-xs-6">Name</th>
+                            <th class="col-xs-4">Shared By</th>
+                            <th class="col-xs-2">operation</th>
+
+                        </tr>
+                    </thead>
+                    <tbody style="overflow-y:scroll;">
+                        <tr *ngFor="let file of sharedFiles">
+                            <td class="col-md-6" style="cursor:pointer">
+                                <span class="glyphicon glyphicon-file"></span>
+                                &nbsp;{{file.file.name}}</td>
+                            <td class="col-md-4">{{file.sharedBy}}</td>
+                            <td class="col-md-2">
+                                <span class="glyphicon glyphicon-download-alt" style="cursor:pointer" (click)="downloadShared(file)"></span>&nbsp; &nbsp;
+
+
+                                <!-- <button >
+                                                </button> -->
+                            </td>
+                        </tr>
+
+
+                    </tbody>
+
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

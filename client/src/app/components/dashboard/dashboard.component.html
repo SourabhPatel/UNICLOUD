@@ -1,0 +1,114 @@
+<div class="row">
+    <div class="col-md-3"></div>
+    <div class="col-md-8">
+        <div class="panel panel-default" style="margin-top:-5%">
+            <div class="panel-heading">
+                <p style="font-weight: bold">Welcome to Dashboard</p>
+            </div>
+
+            <div class="panel-body">
+                <ngb-tabset>
+                    <ngb-tab title="Google Drive" style="color:#bf032a">
+                        <ng-template ngbTabContent>
+                            <br>                            
+                        <span style="font-weight: bold;font-family: 'Times New Roman', Times, serif;color:#bf032a;font-size:150%;align:center">{{DPath}}</span>
+                        <button class="btn btn-primary-outline" style="float:right;" (click)="driveFile.click()"><span class = "glyphicon glyphicon-cloud-upload" ></span></button>                                                        
+                        <button class = "btn btn-primary-outline" style ="float: right;" (click)="Dhide = !Dhide"><span class="glyphicon glyphicon-plus"></span><span class="glyphicon glyphicon-folder-close"></span></button>
+                       <button class = "btn btn-primary-outline" style ="float: right;" (click)="refreshDrive()" ><span class = "glyphicon glyphicon-refresh"></span></button>
+                       <button class="btn btn-primary-outline" style="float: right;margin-bottom:3px;font-weight: bold" (click)=" driveBack()"><span class = "glyphicon glyphicon-arrow-left"></span></button>                           
+                       <input type="file" #driveFile style="display: none" (change)="fileChange($event)" >
+                        <input class = "form-control" type="text"  *ngIf="Dhide" [(ngModel)]="DfolderName" (change)="createDriveFolder()" style="width:25%;margin-right:8px;float: right" placeholder="Enter Folder Name ...">                            
+                        <input class = "form-control" type="text"  *ngIf="SDhide" [(ngModel)]="DriveEmail" (change)="shareDriveFile()" style="width:25%;margin-right:8px;float: right" placeholder="Enter email ...">                            
+                        
+                        <br><br>
+                        <table class="table  table-fixedheader table-hover ">
+                            <thead>
+                                <tr>
+                                    <th class = "col-xs-4">Name</th>
+                                    <th class = "col-xs-2">Size</th>
+                                    <th class = "col-xs-3">Last Modified</th>
+                                    <th class = "col-xs-3">operation</th>
+
+                                </tr>
+                            </thead>
+                            <tbody style="overflow-y:scroll;"> 
+                                <tr *ngFor="let file of files" >
+                                    <td class = "col-md-4"  style="cursor:pointer" (click)="openDriveFolder(file)">
+                                        <span class="glyphicon glyphicon-file" *ngIf="!isDFolder(file)"></span>
+                                        <span class="glyphicon glyphicon-folder-close" *ngIf="isDFolder(file)"></span>&nbsp;{{file.name}}</td>
+                                    <td class = "col-md-2" id = "ghl">{{file.size}}</td>
+                                    <td class = "col-md-3">{{file.modifiedTime}}</td>
+                                    <td class = "col-md-3">
+                                        <span  class="glyphicon glyphicon-download-alt" *ngIf="!isDFolder(file)" style="cursor:pointer" (click)="DriveDownload(file)"></span>&nbsp; &nbsp;
+                                        <span class="glyphicon glyphicon-trash" style="cursor:pointer" (click)="removeFromDrive(file.id)"></span>&nbsp; &nbsp;
+                                        <span *ngIf="!isDFolder(file)" class="glyphicon glyphicon-share" style="cursor:pointer" (click)="dummy1(file)"></span>
+                                        
+
+                                        <!-- <button >
+                                        </button> -->
+                                    </td>
+                                </tr>
+
+
+                            </tbody>
+                           
+                        </table>
+                    </ng-template>
+                    ￼
+                    Find
+                    
+
+                    </ngb-tab>
+                    <ngb-tab title="Dropbox" style="color:#bf032a">
+                        <ng-template ngbTabContent>
+                            <br>
+                            <span style="font-weight: bold;font-family: 'Times New Roman', Times, serif;color:#bf032a;font-size:150%;align:center">{{path}}</span>
+                            <button class="btn btn-primary-outline" style="float:right;" (click)="dropboxFile.click()"><span class = "glyphicon glyphicon-cloud-upload"></span></button>                                                        
+                            <button class = "btn btn-primary-outline" style ="float: right;" (click)="hide = !hide"><span class="glyphicon glyphicon-plus"></span><span class="glyphicon glyphicon-folder-close"></span></button>
+                           <button class = "btn btn-primary-outline" style ="float: right;" (click)="refreshDropbox()"><span class = "glyphicon glyphicon-refresh"></span></button>
+                           <button class="btn btn-primary-outline" style="float: right;margin-bottom:3px;font-weight: bold" (click)="goBack()"><span class = "glyphicon glyphicon-arrow-left"></span></button>                           
+                           <input type="file" #dropboxFile style="display: none" (change)="uploadToDropbox($event)">
+                            <input class = "form-control" type="text" #dropboxFolderCreate *ngIf="hide" (change)="createDropboxFolder()" [(ngModel)]="folderName" style="width:25%;margin-right:8px;float: right" placeholder="Enter Folder Name ...">                            
+                            <input class = "form-control" type="text"  *ngIf="SDDhide" [(ngModel)]="DropboxEmail" (change)="shareDropboxFile()" style="width:25%;margin-right:8px;float: right" placeholder="Enter email ...">                            
+                            
+                            <br><br>
+                            <table class="table  table-fixedheader table-hover ">
+                                <thead>
+                                    <tr>
+                                        <th class = "col-xs-4">Name</th>
+                                        <th class = "col-xs-2">Size</th>
+                                        <th class = "col-xs-3">Last Modified</th>
+                                        <th class = "col-xs-3">operation</th>
+
+                                    </tr>
+                                </thead>
+                                <tbody style="overflow-y:scroll;"> 
+                                    <tr *ngFor="let file of dropboxFiles" id={{file.path_display}}>
+                                        <td class = "col-md-4" (click)="openFolder(file)" style="cursor:pointer">
+                                            <span class="glyphicon glyphicon-file" *ngIf="!isFolder(file)"></span>
+                                            <span class="glyphicon glyphicon-folder-close" *ngIf="isFolder(file)"></span>&nbsp;{{file.name}}</td>
+                                        <td class = "col-md-2">{{file.size}}</td>
+                                        <td class = "col-md-3">{{file.server_modified}}</td>
+                                        <td class = "col-md-3">
+                                            <span *ngIf="!isFolder(file)" class="glyphicon glyphicon-download-alt" id={{file.path_display}} onclick="hello(id)" style="cursor:pointer"></span>&nbsp; &nbsp;
+                                            <span class=" glyphicon glyphicon-trash" style="cursor:pointer" id={{file.path_display}} (click)="removeFromDropbox(file.path_display)"></span>
+                                            &nbsp; &nbsp;
+                                            <span class="glyphicon glyphicon-share" style="cursor:pointer" *ngIf="!isFolder(file)" (click)="dummy2(file)"></span>
+
+                                            <!-- <button >
+                                            </button> -->
+                                        </td>
+                                    </tr>
+
+
+                                </tbody>
+                               
+                            </table>
+                        </ng-template>
+                    </ngb-tab>
+                </ngb-tabset>
+            </div>
+
+        </div>
+    </div>
+</div>

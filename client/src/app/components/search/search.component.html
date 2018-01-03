@@ -1,0 +1,61 @@
+<div class="row">
+  <div class="col-md-3"></div>
+  <div class="col-md-8">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <p style="font-weight: bold">Search Results..</p>
+      </div>
+
+      <div class="panel-body">
+        <table class="table  table-fixedheader table-hover">
+          <thead>
+            <tr>
+              <th class="col-md-4">Name</th>
+              <th class="col-md-2">Size</th>
+              <th class="col-md-2">Location</th>
+              <th class="col-md-2">Last Modified</th>
+              <th class="col-md-2">operations</th>
+
+            </tr>
+          </thead>
+          <tbody style="overflow-y:scroll;">
+            <tr *ngFor="let file of files1" id={{file.metadata.path_display}}>
+              <th class="col-md-4" (click)="openFolder(file)" style="cursor:pointer">
+                <span class="glyphicon glyphicon-file" *ngIf="!isFolder(file)"></span>
+                <span class="glyphicon glyphicon-folder-close" *ngIf="isFolder(file)"></span>&nbsp;{{file.metadata.name}}</th>
+              <th class="col-md-2">{{file.metadata.size}}</th>
+              <th class="col-md-2">dropbox</th>
+              <th  class="col-md-2">{{file.metadata.server_modified}}</th>
+              <th class="col-md-2">
+                <span *ngIf="!isFolder(file)" class="glyphicon glyphicon-download-alt" id={{file.metadata.path_display}} onclick="hello(id)" style="cursor:pointer"></span>&nbsp; &nbsp;
+                <span class=" glyphicon glyphicon-trash" style="cursor:pointer" id={{file.metadata.path_display}} (click)="removeFromDropbox(file.metadata.path_display)"></span>
+
+
+                <!-- <button >
+                          </button> -->
+              </th>
+            </tr>
+            <tr *ngFor="let file of files2" >
+                <th class="col-md-4" (click)="openFolder(file)" style="cursor:pointer">
+                  <span class="glyphicon glyphicon-file" *ngIf="!isDFolder(file)"></span>
+                  <span class="glyphicon glyphicon-folder-close" *ngIf="isDFolder(file)"></span>&nbsp;{{file.name}}</th>
+                <th class="col-md-2">{{file.size}}</th>
+                <th class="col-md-2">drive</th>
+                <th class="col-md-2">{{file.modifiedTime}}</th>
+                <th>
+                  <span  class="glyphicon glyphicon-download-alt" *ngIf="!isDFolder(file)"  (click)="DriveDownload(file)" style="cursor:pointer"></span>&nbsp; &nbsp;
+                  <span class=" glyphicon glyphicon-trash" style="cursor:pointer" (click)="removeFromDrive(file.id)" ></span>
+  
+  
+                  <!-- <button >
+                            </button> -->
+                </th>
+              </tr>
+
+          </tbody>
+
+        </table>
+      </div>
+    </div>
+  </div>
+</div>

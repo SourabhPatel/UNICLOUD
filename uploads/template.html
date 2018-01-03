@@ -1,0 +1,39 @@
+<div class="container">
+    <h1>ng2-formly ng-bootstrap tab example:</h1>
+    <p>An example of how to use a custom FieldWrapper with ng-bootstrap's tabset and tab components, allowing fields and fieldGroups to be composed into tabs.</p>
+    <hr>
+    <form class="formly" role="form" novalidate [formGroup]="form">
+        <ngb-tabset>
+            <ngb-tab *ngFor="let tab of tabs" [title]="tab.title">
+                
+                <template ngbTabContent>
+                    <formly-form [model]="model" [fields]="tab.form.fields" [form]="form">
+            </formly-form>
+                </template>
+            </ngb-tab>
+            
+        </ngb-tabset>
+        
+    </form>
+    <hr>
+    <br><strong>FORM DATA:</strong><br><pre>{{model | json}}</pre><br>
+    <br><strong>FIELD DATA:</strong><br><pre>{{fields1 | json}}</pre><br>
+
+    <div style="margin-top:30px">
+        <small>
+            This is an example for the
+            <a href="https://formly-js.github.io/ng2-formly">ng2-formly</a>
+            project made with ♥ by
+            <strong>
+            <span *ngIf="!author.name || !author.url">
+              {{author.name || 'anonymous'}}
+            </span>
+            <a ng-if="author.url" href="{{author.url}}">
+                {{author.name}}
+            </a>
+            </strong>
+            <br />
+            This example is running angular version "{{env.angularVersion}}" and formly version "{{env.formlyVersion}}"
+        </small>
+    </div>
+</div>

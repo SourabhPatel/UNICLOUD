@@ -1,0 +1,49 @@
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Starter Template for Bootstrap</title>
+  <link href="https://github.com/BlackrockDigital/startbootstrap-bare/blob/master/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+<style>
+  a {
+    font-size: 25px;
+    font-family: 'Segoe UI',
+
+  }
+</style>
+
+<body style="background-color: honeydew">
+
+  <div class="container">
+
+    <div class="row">
+      <div class="col-md-3">
+        <a [routerLink]="['/dashboard']" href="https://www.creative-tim.com" class="simple-text" style="font-size: 30px;margin-top:5px;float:left">
+          <img src="../../assets/img/logo.png" style="width:35px;height:35px;margin-left:-25px" alt=""> UNICLOUD </a>
+      </div>
+      <div class="col-md-9">
+      
+        <ul class="navbar list-inline" style="float:right">
+
+          <li class="list group-item" *ngIf="!authService.loggedIn()" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}">
+            <a [routerLink]="['/login']">Login</a>
+          </li>
+          <li class="list group-item" *ngIf="!authService.loggedIn()" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}">
+            <a [routerLink]="['/register']">Register</a>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+
+</html>
